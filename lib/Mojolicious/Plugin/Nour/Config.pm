@@ -41,7 +41,7 @@ Mojolicious::Plugin::Nour::Config - Robustly imports config from a ./config sub-
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 USAGE
 
@@ -108,32 +108,9 @@ On application startup, if you haven't turned the silence option on you can see 
 
 Neat, right? Yeah.
 
-=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
-
-=head1 SUPPORT
-
-=head2 Bugs / Feature Requests
-
-Please report any bugs or feature requests through the issue tracker
-at L<https://github.com/sharabash/mojolicious-plugin-nour/issues>.
-You will be notified automatically of any progress on your issue.
-
-=head2 Source Code
-
-This is open source software.  The code repository is available for
-public review and contribution under the terms of the license.
-
-L<https://github.com/sharabash/mojolicious-plugin-nour>
-
-  git clone git://github.com/sharabash/mojolicious-plugin-nour.git
-
 =head1 AUTHOR
 
 Nour Sharabash <amirite@cpan.org>
-
-=head1 CONTRIBUTOR
-
-Nour Sharabash <nour.sharabash@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 

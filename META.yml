@@ -30,12 +30,15 @@ no_index:
   package:
     - DB
 provides:
+  Mojolicious::Plugin::Nour:
+    file: lib/Mojolicious/Plugin/Nour.pm
+    version: '0.06'
   Mojolicious::Plugin::Nour::Config:
     file: lib/Mojolicious/Plugin/Nour/Config.pm
-    version: '0.05'
+    version: '0.06'
   Mojolicious::Plugin::Nour::Database:
     file: lib/Mojolicious/Plugin/Nour/Database.pm
-    version: '0.05'
+    version: '0.06'
 requires:
   Mojo::Base: '0'
   Nour::Config: '0'
@@ -45,7 +48,7 @@ resources:
   bugtracker: https://github.com/sharabash/mojolicious-plugin-nour/issues
   homepage: https://metacpan.org/release/Mojolicious-Plugin-Nour
   repository: git://github.com/sharabash/mojolicious-plugin-nour.git
-version: '0.05'
+version: '0.06'
 x_authority: cpan:AMIRITE
 x_contributors:
   - 'Nour Sharabash <nour.sharabash@gmail.com>'
