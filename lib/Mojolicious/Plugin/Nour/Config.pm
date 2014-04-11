@@ -41,7 +41,7 @@ Mojolicious::Plugin::Nour::Config - Robustly imports config from a ./config sub-
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 USAGE
 

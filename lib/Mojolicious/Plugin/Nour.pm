@@ -1,5 +1,5 @@
 package Mojolicious::Plugin::Nour;
-# ABSTRACT: This module does nothing at the moment.
+# ABSTRACT: This module is just a placeholder for the time being.
 
 1;
 
@@ -11,19 +11,25 @@ __END__
 
 =head1 NAME
 
-Mojolicious::Plugin::Nour - This module does nothing at the moment.
+Mojolicious::Plugin::Nour - This module is just a placeholder for the time being.
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
-=head1 DESCRIPTION
+=head1 SEE ALSO
 
-Temporary placeholder for something useful, maybe...
+=over 2
 
-=head1 NAME
+=item L<Mojolicious::Plugin::Nour::Config>
 
-Nour
+=item L<Mojolicious::Plugin::Nour::Database>
+
+=item L<Nour::Config>
+
+=item L<Nour::Database>
+
+=back
 
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 

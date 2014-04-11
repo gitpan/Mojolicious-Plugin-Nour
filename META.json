@@ -32,7 +32,7 @@
             "Mojo::Base" : "0",
             "Nour::Config" : "0",
             "Nour::Database" : "0",
-            "perl" : "5.006"
+            "perl" : "5.010"
          }
       },
       "test" : {
@@ -49,7 +49,7 @@
             "IPC::Open3" : "0",
             "List::Util" : "0",
             "Test::More" : "0",
-            "perl" : "5.006",
+            "perl" : "5.010",
             "strict" : "0",
             "version" : "0",
             "warnings" : "0"
@@ -59,15 +59,15 @@
    "provides" : {
       "Mojolicious::Plugin::Nour" : {
          "file" : "lib/Mojolicious/Plugin/Nour.pm",
-         "version" : "0.06"
+         "version" : "0.07"
       },
       "Mojolicious::Plugin::Nour::Config" : {
          "file" : "lib/Mojolicious/Plugin/Nour/Config.pm",
-         "version" : "0.06"
+         "version" : "0.07"
       },
       "Mojolicious::Plugin::Nour::Database" : {
          "file" : "lib/Mojolicious/Plugin/Nour/Database.pm",
-         "version" : "0.06"
+         "version" : "0.07"
       }
    },
    "release_status" : "stable",
@@ -82,7 +82,7 @@
          "web" : "https://github.com/sharabash/mojolicious-plugin-nour"
       }
    },
-   "version" : "0.06",
+   "version" : "0.07",
    "x_authority" : "cpan:AMIRITE",
    "x_contributors" : [
       "Nour Sharabash <nour.sharabash@gmail.com>"

@@ -5,8 +5,8 @@ use Nour::Database; has '_nour_db';
 
 sub register {
     my ( $self, $app, $opts ) = @_;
+    $opts->{ '-db-is-mode-by-default' } //= 1 unless exists $opts->{ '-db-is-mode-by-default' };
     my $db_is_mode_by_default = delete $opts->{ '-db-is-mode-by-default' };
-       $db_is_mode_by_default = 1 if not defined $db_is_mode_by_default;
 
     database_setup: {
         $app->helper( _connect_db => sub {
@@ -14,13 +14,13 @@ sub register {
             my $mode = $app->mode;
             my $conf = $app->config( 'database' );
             $conf->{default}{database} = $mode if exists $conf->{ $mode } and $db_is_mode_by_default; # e.g., define the default db as "development" if we're in development mode
-            $app->_nour_db( new Nour::Database ( %{ $conf } ) );
+            $self->_nour_db( new Nour::Database ( %{ $conf } ) );
         } );
         $app->helper( db => sub {
             my ( $c, @args ) = @_;
-            $app->_connect_db unless $app->_nour_db;
-            return $app->_nour_db->switch_to( @args ) if @args;
-            return $app->_nour_db;
+            $app->_connect_db unless $self->_nour_db;
+            return $self->_nour_db->switch_to( @args ) if @args;
+            return $self->_nour_db;
         } );
         $app->hook( before_dispatch => sub { # this hook is important for assigning handlers for each worker
             my ( $c, @args ) = @_;
@@ -43,7 +43,7 @@ Mojolicious::Plugin::Nour::Database - Adds an easy to use database handle to you
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 USAGE
 

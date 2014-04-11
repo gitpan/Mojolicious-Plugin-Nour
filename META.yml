@@ -11,7 +11,7 @@ build_requires:
   IPC::Open3: '0'
   List::Util: '0'
   Test::More: '0'
-  perl: '5.006'
+  perl: '5.010'
   strict: '0'
   version: '0'
   warnings: '0'
@@ -32,23 +32,23 @@ no_index:
 provides:
   Mojolicious::Plugin::Nour:
     file: lib/Mojolicious/Plugin/Nour.pm
-    version: '0.06'
+    version: '0.07'
   Mojolicious::Plugin::Nour::Config:
     file: lib/Mojolicious/Plugin/Nour/Config.pm
-    version: '0.06'
+    version: '0.07'
   Mojolicious::Plugin::Nour::Database:
     file: lib/Mojolicious/Plugin/Nour/Database.pm
-    version: '0.06'
+    version: '0.07'
 requires:
   Mojo::Base: '0'
   Nour::Config: '0'
   Nour::Database: '0'
-  perl: '5.006'
+  perl: '5.010'
 resources:
   bugtracker: https://github.com/sharabash/mojolicious-plugin-nour/issues
   homepage: https://metacpan.org/release/Mojolicious-Plugin-Nour
   repository: git://github.com/sharabash/mojolicious-plugin-nour.git
-version: '0.06'
+version: '0.07'
 x_authority: cpan:AMIRITE
 x_contributors:
   - 'Nour Sharabash <nour.sharabash@gmail.com>'

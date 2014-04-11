@@ -1,18 +1,21 @@
 NAME
 
-    Mojolicious::Plugin::Nour - This module does nothing at the moment.
+    Mojolicious::Plugin::Nour - This module is just a placeholder for the
+    time being.
 
 VERSION
 
-    version 0.06
+    version 0.07
 
-DESCRIPTION
+SEE ALSO
 
-    Temporary placeholder for something useful, maybe...
+    Mojolicious::Plugin::Nour::Config
 
-NAME
+    Mojolicious::Plugin::Nour::Database
 
-    Nour
+    Nour::Config
+
+    Nour::Database
 
 SUPPORT
 
